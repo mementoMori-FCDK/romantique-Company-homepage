@@ -1,0 +1,90 @@
+/*Navigation*/
+
+html {
+    font-family: 'EB Garamond', serif;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+    padding: 0;
+}
+
+.nav a {
+    width: 30%;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+.nav a:visited {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/*Mission*/
+
+.mission {
+    width: 80%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    margin: auto;
+    padding: 0 20px;
+
+    background-image: url(./resources/mission-back.jpg);
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    width: 30%;
+    font-size: 34px;
+    color: white;
+}
+
+/*Gallery*/
+
+.gallery {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.gl-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 5px;
+}
