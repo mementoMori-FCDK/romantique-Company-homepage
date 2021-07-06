@@ -69,11 +69,22 @@ h2 {
 /*Gallery*/
 
 .gallery {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin-top: 20px;
+
+    background-image: url(./resources/gallery-back.jpg);
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -81,10 +92,35 @@ h1 {
     font-size: 40px;
 }
 
+.gallery  h1 {
+    color: white;
+}
+
 .gl-container {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     gap: 5px;
+}
+
+/*Team*/
+
+.team {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.team .team-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.team .team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
