@@ -1,8 +1,45 @@
-/*Navigation*/
+/*General style*/
 
 html {
     font-family: 'EB Garamond', serif;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+h2 {
+    width: 30%;
+    font-size: 34px;
+    color: white;
+}
+
+@media (max-width:1026px) { /* big landscape tablets, laptops, and desktops */
+    
+    .mission {
+
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
+/*Navigation*/
 
 .nav {
     display: flex;
@@ -14,26 +51,18 @@ html {
 
 .nav .links {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
+    flex-shrink: 0;
     width: 20%;
     padding: 0;
+    min-width: 235px;
 }
 
 .nav a {
     width: 30%;
-    text-decoration: none;
     font-size: 24px;
     font-weight: 700;
-    color: black;
-}
-
-.nav a:visited {
-    color: black;
-}
-
-li {
-    list-style: none;
 }
 
 /*Mission*/
@@ -42,7 +71,6 @@ li {
     width: 80%;
     
     display: flex;
-    justify-content: flex-start;
     align-items: flex-end;
 
     margin: auto;
@@ -60,12 +88,6 @@ li {
     background-size: cover;
 }
 
-h2 {
-    width: 30%;
-    font-size: 34px;
-    color: white;
-}
-
 /*Gallery*/
 
 .gallery {
@@ -74,6 +96,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    
 
     background-image: url(./resources/gallery-back.jpg);
 
@@ -87,11 +110,6 @@ h2 {
     background-size: cover;
 }
 
-h1 {
-    margin: 20px 0;
-    font-size: 40px;
-}
-
 .gallery  h1 {
     color: white;
 }
@@ -102,6 +120,7 @@ h1 {
     flex-flow: row wrap;
     justify-content: space-around;
     gap: 5px;
+    margin-bottom:  20px;
 }
 
 /*Team*/
@@ -113,9 +132,11 @@ h1 {
 }
 
 .team .team-gallery {
+    width: 70%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -123,4 +144,59 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    background-image: url(./resources/footer-back.jpg);
+
+    /* Set a specific height */
+    min-height: 300px;
+    background-position: top;
+
+}
+
+footer .footer-container {
+    display: flex;
+    flex: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+footer .copyright {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 20px;
+}
+
+footer .contact {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 20px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/*Media*/
+
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+
 }
