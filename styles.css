@@ -29,13 +29,11 @@ h2 {
 }
 
 @media (max-width:1026px) { /* big landscape tablets, laptops, and desktops */
-    
-    .mission {
-
-    }
 
     h2 {
         font-size: 26px;
+        text-align: center;
+        width: 100%;
     }
 }
 
